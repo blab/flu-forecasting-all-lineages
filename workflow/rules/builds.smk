@@ -170,7 +170,7 @@ rule estimate_frequencies:
     input:
         tree = rules.refine.output.tree,
         metadata = _get_metadata_by_wildcards,
-        weights = "data/region_weights.json"
+        weights = "config/region_weights.json"
     output:
         frequencies = BUILD_TIMEPOINT_PATH + "frequencies.json"
     params:
